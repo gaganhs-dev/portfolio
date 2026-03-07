@@ -1,27 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>My Portfolio</title>
+<meta charset="UTF-8">
+<title>Gagan | Java Backend Developer</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+background:#020617;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li{
+cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+color:#38bdf8;
+}
+
+.hero p{
+margin-top:10px;
+font-size:20px;
+color:#94a3b8;
+}
+
+.btn{
+margin-top:25px;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+border:none;
+font-weight:bold;
+cursor:pointer;
+border-radius:6px;
+}
+
+/* Skills */
+
+section{
+padding:60px;
+text-align:center;
+}
+
+.skills{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+width:150px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.1);
+background:#38bdf8;
+color:black;
+}
+
+/* Projects */
+
+.projects{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+width:250px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-10px);
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
+}
+
+</style>
 </head>
 
 <body>
 
+<!-- Navbar -->
+
+<nav>
+<h2>Gagan</h2>
+
+<ul>
+<li>Home</li>
+<li>Skills</li>
+<li>Projects</li>
+<li>Contact</li>
+</ul>
+
+</nav>
+
+
+<!-- Hero Section -->
+
+<div class="hero">
+
 <h1>Hi, I'm Gagan</h1>
-<p>Java Backend Developer</p>
+<p>Java Backend Developer | Spring Boot</p>
+
+<button class="btn">View Projects</button>
+
+</div>
+
+
+<!-- Skills -->
+
+<section>
 
 <h2>Skills</h2>
-<ul>
-<li>Java</li>
-<li>Spring Boot</li>
-<li>MySQL</li>
-<li>Git</li>
-</ul>
+
+<div class="skills">
+
+<div class="card">Java</div>
+<div class="card">Spring Boot</div>
+<div class="card">MySQL</div>
+<div class="card">REST API</div>
+<div class="card">Git</div>
+<div class="card">Maven</div>
+
+</div>
+
+</section>
+
+
+<!-- Projects -->
+
+<section>
 
 <h2>Projects</h2>
-<ul>
-<li>Student Management System</li>
-<li>REST API Project</li>
-</ul>
+
+<div class="projects">
+
+<div class="project">
+<h3>Student Management</h3>
+<p>Spring Boot CRUD Application</p>
+</div>
+
+<div class="project">
+<h3>REST API</h3>
+<p>Backend API using Spring Boot</p>
+</div>
+
+<div class="project">
+<h3>Auth System</h3>
+<p>Login & Registration API</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Contact -->
+
+<section>
+
+<h2>Contact</h2>
+
+<p>Email : yourmail@gmail.com</p>
+<p>GitHub : github.com/yourusername</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Gagan | Java Backend Developer</p>
+
+</footer>
 
 </body>
 </html>
